@@ -15,5 +15,6 @@ class User(db.Model):
         return {
             "id": self.id,
             "email": self.email
-            # do not serialize the password, its a security breach
+            #Serializar es el proceso de convertir un objeto del backend en un formato que pueda ser enviado al frontend, como JSON.
+            #No serializar la contraseña por seguridad.
         }

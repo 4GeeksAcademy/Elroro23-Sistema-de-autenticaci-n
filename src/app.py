@@ -126,6 +126,10 @@ def register():
         return jsonify({'msg': 'El campo email es obligatorio'}), 400
     if 'password' not in body:
         return jsonify({'msg': 'El campo password es obligatorio'}), 400
+    user = User.query.filter_by(email=body['email']).first()
+    if user:
+        return jsonify({"msg": "El usuario ya existe"}), 400
+    
     pw_hash = bcrypt.generate_password_hash(body['password']).decode('utf-8') #Encriptamos la contraseña(hay que importar primero).
     new_user = User() #Instanciamos un nuevo usuario.
     new_user.email = body['email']
