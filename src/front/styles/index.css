@@ -1,3 +1,9 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+body {
+    background-image: url("https://w.wallhaven.cc/full/l8/wallhaven-l8x1pr.jpg");
+    background-position: center;
+    
+
+}

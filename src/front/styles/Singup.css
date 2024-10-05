@@ -1,0 +1,48 @@
+input {
+    color: white;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid rgb(255, 255, 255);/* Para que solo se vea el borde de abajo */
+    outline: none;/* Elimina el borde al hacer clic */
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);/* Color del placeholder */
+}
+
+form {
+    box-shadow: 0 0 4px 4px rgba(255, 75, 180, 0.993);/* Sombra */
+    font-family: 'Franklin Gothic Medium';
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1544365558-35aa4afcf11f?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; /* Cubre el contenedor completamente pero puede recortar partes de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.submit-icon {
+    background-color: transparent;/* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer;/* Cambiar cursor al pasar el mouse */
+    margin-left: 10px;/* Espacio entre input y botón */
+    font-size: 45px;/* Tamaño del ícono */
+    color: white;/* Color inicial del ícono */
+    transition: color 0.3s ease;/* Transición suave */
+}
+
+.submit-icon:hover i {
+    color: rgba(255, 75, 180, 0.993);/* Cambia el color del ícono al pasar el mouse */
+    
+}

@@ -87,6 +87,8 @@ def login():
     if body is None:
         return jsonify({'msg': 'Es necesario rellenar los campos'}), 400
     if 'email' not in body:
+        
+        
         return jsonify({'msg': 'El campo email es obligatorio'}), 400
     if 'password' not in body:
         return jsonify({'msg': 'El campo password es obligatorio'}), 400
